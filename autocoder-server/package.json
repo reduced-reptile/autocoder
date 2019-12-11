@@ -1,0 +1,32 @@
+{
+  "name": "autocoder-server",
+  "version": "1.0.0",
+  "private": false,
+  "description": "The back end of the autocoder application",
+  "author": "Raymond Mendelovits",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "dev": "nodemon --exec npm start",
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "autocoder-package": "file:../autocoder-package",
+    "body-parser": "~1.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "helmet": "^3.21.2",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "pug": "~2.0.4",
+    "swagger-jsdoc": "^3.5.0",
+    "swagger-ui-express": "^4.1.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "test/*",
+      "docs/*"
+    ],
+    "delay": "2500"
+  }
+}
