@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title">Autocoder</string>
+    <string name="welcome_message">Welcome to Autocoder!</string>
+    <string name="vue_title">Vue Application</string>
+    <string name="vue_description_1">Most people should use web application made in vue.</string>
+    <string name="vue_description_2">It has many advanced features in it</string>
+    <string name="vue_list_1">Modern look and feel</string>
+    <string name="vue_list_2">Installable as an application</string>
+    <string name="vue_list_3">Works offline</string>
+    <string name="vue_href">/vue</string>
+    <string name="vue_link">View the vue version of the site!</string>
+    <string name="basic_title">Basic Application</string>
+    <string name="basic_description_1">If you have trouble using the vue version of the page, or don't want to use css or javascript, we have a basic version of the application.</string>
+    <string name="basic_description_2">It has all the features of the vue application without any of the bells and whistles of the modern era.</string>
+    <string name="basic_href">/basic</string>
+    <string name="basic_link">View the basic version of the site!</string>
+</resources>

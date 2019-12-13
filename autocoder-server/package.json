@@ -20,7 +20,8 @@
     "morgan": "~1.9.1",
     "pug": "~2.0.4",
     "swagger-jsdoc": "^3.5.0",
-    "swagger-ui-express": "^4.1.2"
+    "swagger-ui-express": "^4.1.2",
+    "xml2js": "^0.4.22"
   },
   "nodemonConfig": {
     "ignore": [

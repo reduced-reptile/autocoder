@@ -1,0 +1,25 @@
+extends ../layout
+
+block content
+  header
+    h1= title
+  main
+    form(id='basicForm', action='/basic')
+      label(for='problemTitle')
+        p Problem Title:
+      input(id='problemTitle', type='text', size='50', form='basicForm')
+      label(for='problemDescription')
+        p Problem Description:
+      textarea(id='problemDescription', rows='4', cols='100', form='basicForm')
+      label(for='inputSpeciﬁcation')
+        p Input Speciﬁcation:
+      textarea(id='inputSpeciﬁcation', rows='4', cols='100', form='basicForm')
+      label(for='outputSpeciﬁcation')
+        p Output Speciﬁcation:
+      textarea(id='outputSpeciﬁcation', rows='4', cols='100', form='basicForm')
+      label(for='numberOfTests')
+        p Number of tests:
+      input(id='numberOfTests', type='number', min='0', max='5', value='2', form='basicForm')
+      br
+      br
+      input(type='submit' value='Continue')
