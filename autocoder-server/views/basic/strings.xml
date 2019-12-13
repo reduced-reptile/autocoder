@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="title">Autocoder</string>
+    <string name="problem_title">Problem Title:</string>
+    <string name="problem_description">Problem Description:</string>
+    <string name="input_speciﬁcation">Input Speciﬁcation:</string>
+    <string name="output_speciﬁcation">Output Speciﬁcation:</string>
+    <string name="number_of_tests">Number of tests:</string>
+    <string name="submit_button_label">Continue</string>
+</resources>
