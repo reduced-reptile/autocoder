@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The following section is generic -->
+    <string name="title">Autocodeur</string>
+    <string name="language_code">fr</string>
+    <string name="submit_button_label">Continuer</string>
+    
+    <!-- The following section is for the home page (/) -->
+    <string name="welcome_message">Bienvenue chez Autocodeur!</string>
+    <string name="language_link">Do you prefer English?</string>
+    <string name="language_href">/?lang=en</string>
+    <string name="vue_title">Application Vue</string>
+    <string-array name="vue_description_array">
+        <item>La plupart des gens devraient utiliser l'application Web conçue en vue.</item>
+        <item>Nous lui avons donné beaucoup de fonctionnalités intéressantes.</item>
+    </string-array>
+    <string-array name="vue_reason_array">
+        <item>Aspect et sensation modernes</item>
+        <item>Installable en tant qu'application</item>
+        <item>Fonctionne hors ligne</item>
+    </string-array>
+    <string name="vue_href">/vue?lang=fr</string>
+    <string name="vue_link">Voir la version vue du site!</string>
+    <string name="basic_title">Application de base</string>
+    <string-array name="basic_description_array">
+        <item>Si vous avez du mal à utiliser la version vue de la page, ou si vous ne souhaitez pas utiliser css ou javascript, nous avons une version de base de l'application.</item>
+        <item>Il possède toutes les fonctionnalités de l'application vue sans les cloches et les sifflets de l'ère moderne.</item>
+    </string-array>
+    <string name="basic_href">/basic/1?lang=fr</string>
+    <string name="basic_link">Voir la version de base du site!</string>
+
+    <!-- The following section is for the first step (/basic/1) -->
+    <string name="basic_form_href">/basic/2?lang=fr</string>
+    <string name="problem_title">Titre du problème:</string>
+    <string name="problem_description">Description du problème:</string>
+    <string name="input_speciﬁcation">Spécification d'entrée:</string>
+    <string name="output_speciﬁcation">Spécification de sortie:</string>
+    <string name="programming_language">Langage de programmation:</string>
+    <string name="contest_languages">Langues du concours</string>
+    <string-array name="contest_language_label_array">
+        <item>C</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>Python</item>
+    </string-array>
+    <string-array name="contest_language_value_array">
+        <item>c</item>
+        <item>c++</item>
+        <item>java</item>
+        <item>python</item>
+    </string-array>
+    <string name="additional_languages">Langues supplémentaires</string>
+    <string-array name="additional_language_label_array">
+        <item>Crystal</item>
+        <item>Go</item>
+        <item>Javascript</item>
+        <item>Rust</item>
+        <item>Typescript</item>
+    </string-array>
+    <string-array name="additional_language_value_array">
+        <item>crystal</item>
+        <item>go</item>
+        <item>javascript</item>
+        <item>rust</item>
+        <item>typescript</item>
+    </string-array>
+</resources>

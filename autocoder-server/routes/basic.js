@@ -7,7 +7,11 @@ const utils = require('./utils.js');
 
 /* GET basics page. */
 router.get('/1', function(req, res, next) {
-  fs.readFile(path.join(__dirname, '../res/values/strings.xml'), 'utf-8', function (error, xml) {
+  let xmlFilePath = '../res/values/strings.xml';
+  if (req.query.lang === 'fr') {
+    xmlFilePath = '../res/values-fr/strings.xml';
+  }
+  fs.readFile(path.join(__dirname, xmlFilePath), 'utf-8', function (error, xml) {
     utils.catchError(error, 'The dynamic strings failed to load', req, res);
     parseString(xml, function (err, result) {
       utils.catchError(err, 'Could not parse dynamic strings', req, res);
@@ -15,7 +19,7 @@ router.get('/1', function(req, res, next) {
       const arrayResources = result['resources']['string-array'];
       const contestLanguageLabels = utils.getProperty('contest_language_label_array', arrayResources, req, res);
       const additionalLanguageLabels = utils.getProperty('additional_language_label_array', arrayResources, req, res);
-      res.render('basic/basic', {
+      res.render('basic', {
         title: utils.getProperty('title', stringResources, req, res),
         basicFormHref: utils.getProperty('basic_form_href', stringResources, req, res),
         problemTitle: utils.getProperty('problem_title', stringResources, req, res),

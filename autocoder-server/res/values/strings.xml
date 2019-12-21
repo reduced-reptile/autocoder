@@ -3,13 +3,16 @@
 
     <!-- The following section is generic -->
     <string name="title">Autocoder</string>
+    <string name="language_code">en</string>
     <string name="submit_button_label">Continue</string>
     
     <!-- The following section is for the home page (/) -->
     <string name="welcome_message">Welcome to Autocoder!</string>
+    <string name="language_link">Vous préférez le français?</string>
+    <string name="language_href">/?lang=fr</string>
     <string name="vue_title">Vue Application</string>
     <string-array name="vue_description_array">
-        <item>Most people should use web application made in vue.</item>
+        <item>Most people should use the web application designed in vue.</item>
         <item>We have given it a lot of cool features.</item>
     </string-array>
     <string-array name="vue_reason_array">
