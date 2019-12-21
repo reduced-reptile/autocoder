@@ -6,12 +6,18 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var helmet = require('helmet');
 const swaggerUi = require('swagger-ui-express');
+const rateLimit = require("express-rate-limit");
 
 var indexRouter = require('./routes/index');
 var basicRouter = require('./routes/basic');
 var apiRouter = require('./routes/api');
 
 var app = express();
+
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100 // limit each IP to 100 requests per windowMs
+});
 
 // swagger ui options
 var options = {
@@ -26,6 +32,8 @@ app.set('view engine', 'pug');
 
 app.use(helmet());
 app.use(logger('dev'));
+app.enable('trust proxy');
+app.use('/api', apiLimiter);
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(bodyParser.urlencoded({ extended: true }));

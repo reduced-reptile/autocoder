@@ -6,14 +6,13 @@ block content
   main
     p= welcomeMessage
     h2= vueTitle
-    p= vueDescription1
-    p= vueDescription2
+    each description in vueDescription
+      p= description
     ul
-      li= vueList1
-      li= vueList2
-      li= vueList3
+      each item in vueList
+        li= item
     a(href=vueHref)= vueLink
     h2= basicTitle
-    p= basicDescription1
-    p= basicDescription2
+    each description in basicDescription
+      p= description
     a(href=basicHref)= basicLink

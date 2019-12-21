@@ -4,22 +4,31 @@ block content
   header
     h1= title
   main
-    form(id='basicForm', action='/basic', method='post')
+    form(id='basicForm', action= basicFormHref, method='post')
       label(for='problemTitle')
         p= problemTitle
-      input(id='problemTitle', name='problemTitle', type='text', size='50', form='basicForm')
+      input(id='problemTitle', name='problemTitle', type='text', size='50')
       label(for='problemDescription')
         p= problemDescription
-      textarea(id='problemDescription', name='problemDescription' rows='4', cols='100', form='basicForm')
+      textarea(id='problemDescription', name='problemDescription' rows='4', cols='51')
       label(for='inputSpeciﬁcation')
         p= inputSpeciﬁcation
-      textarea(id='inputSpeciﬁcation', name='inputSpeciﬁcation', rows='4', cols='100', form='basicForm')
+      textarea(id='inputSpeciﬁcation', name='inputSpeciﬁcation', rows='4', cols='51')
       label(for='outputSpeciﬁcation')
         p= outputSpeciﬁcation
-      textarea(id='outputSpeciﬁcation', name='outputSpeciﬁcation', rows='4', cols='100', form='basicForm')
-      label(for='numberOfTests')
-        p= numberOfTests
-      input(id='numberOfTests', name='numberOfTests', type='number', min='0', max='5', value='2', form='basicForm')
+      textarea(id='outputSpeciﬁcation', name='outputSpeciﬁcation', rows='4', cols='51')
+      label(for='programmingLanguage')
+        p= programmingLanguage
+      select(id='programmingLanguage', name='programmingLanguage')
+        optgroup(label=contestLanguages)
+          each item in contestLanguageOptions
+             option(value=item['value'], disabled='true')= item['label']
+        optgroup(label=additionalLanguages)
+          each item in additionalLanguageOptions
+            if item['value'] === 'crystal'
+              option(value=item['value'])= item['label']
+            else
+              option(value=item['value'], disabled='true')= item['label']
       br
       br
       input(type='submit' value=submitButtonLabel)

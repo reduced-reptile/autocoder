@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- The following section is generic -->
+    <string name="title">Autocoder</string>
+    <string name="submit_button_label">Continue</string>
+    
+    <!-- The following section is for the home page (/) -->
+    <string name="welcome_message">Welcome to Autocoder!</string>
+    <string name="vue_title">Vue Application</string>
+    <string-array name="vue_description_array">
+        <item>Most people should use web application made in vue.</item>
+        <item>We have given it a lot of cool features.</item>
+    </string-array>
+    <string-array name="vue_reason_array">
+        <item>Modern look and feel</item>
+        <item>Installable as an application</item>
+        <item>Works offline</item>
+    </string-array>
+    <string name="vue_href">/vue</string>
+    <string name="vue_link">View the vue version of the site!</string>
+    <string name="basic_title">Basic Application</string>
+    <string-array name="basic_description_array">
+        <item>If you have trouble using the vue version of the page, or don't want to use css or javascript, we have a basic version of the application.</item>
+        <item>It has all the features of the vue application without any of the bells and whistles of the modern era.</item>
+    </string-array>
+    <string name="basic_href">/basic/1</string>
+    <string name="basic_link">View the basic version of the site!</string>
+
+    <!-- The following section is for the first step (/basic/1) -->
+    <string name="basic_form_href">/basic/2</string>
+    <string name="problem_title">Problem Title:</string>
+    <string name="problem_description">Problem Description:</string>
+    <string name="input_speciﬁcation">Input Speciﬁcation:</string>
+    <string name="output_speciﬁcation">Output Speciﬁcation:</string>
+    <string name="programming_language">Programming Language:</string>
+    <string name="contest_languages">Contest Languages</string>
+    <string-array name="contest_language_label_array">
+        <item>C</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>Python</item>
+    </string-array>
+    <string-array name="contest_language_value_array">
+        <item>c</item>
+        <item>c++</item>
+        <item>java</item>
+        <item>python</item>
+    </string-array>
+    <string name="additional_languages">Additional Languages</string>
+    <string-array name="additional_language_label_array">
+        <item>Crystal</item>
+        <item>Go</item>
+        <item>Javascript</item>
+        <item>Rust</item>
+        <item>Typescript</item>
+    </string-array>
+    <string-array name="additional_language_value_array">
+        <item>crystal</item>
+        <item>go</item>
+        <item>javascript</item>
+        <item>rust</item>
+        <item>typescript</item>
+    </string-array>
+</resources>
