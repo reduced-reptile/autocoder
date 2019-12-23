@@ -67,4 +67,8 @@
         <item>rust</item>
         <item>typescript</item>
     </string-array>
+
+    <!-- The following section is for the second step (/basic/2) -->
+    <string name="view_results_label">Veuillez copier le code ci-dessous et l'enregistrer pour votre soumission.</string>
+    <string name="code_output_label">Sortie de code</string>
 </resources>

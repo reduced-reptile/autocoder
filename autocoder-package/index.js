@@ -1,21 +1,16 @@
-module.exports = (step, data) => {
+module.exports = (step,
+  lang,
+  data) => {
   switch(step) {
-    case 'ccc-prep':
-      let problemArray = data.split('Problem J');
-      problemArray.shift();
-      let problems = new Map(); 
-      problemArray.forEach(function(problem) {
-        let problemTitle = problem.split('\n')[0].trim();
-        let problemContent = problem.split('\n');
-        problemContent.shift();
-        problemContent = problemContent.join('\n')
-        problems.set('Problem J' + problemTitle[0], {
-            title: problemTitle.split(': ')[1],
-            content: problemContent
-        });
-      });
-      return JSON.stringify([...problems]);
+    case 'code':
+      return { // fake stub for building the second page of the application so I can see the results first
+        status: 200,
+        code: 'puts "Hello world!"'
+      };
     default:
-      return 'Invalid step: ' + step;
+      return {
+        status: 400,
+        message: 'Invalid step ' + step,
+      };
     }
 }

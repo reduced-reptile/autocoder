@@ -22,6 +22,8 @@ function getErrorMessageTranslation(errorMessage, lang) {
           return 'Impossible de charger les phrases dynamiques';
         case 'Could not parse dynamic sentences':
           return 'Impossible d\'analyser les phrases dynamiques'
+        case 'Validation error: ':
+          return 'Erreur de validation: ';
         default:
           return 'Erreur';
       }
@@ -65,6 +67,8 @@ module.exports = {
             return 'Impossible de charger les phrases dynamiques';
           case 'Could not parse dynamic sentences':
             return 'Impossible d\'analyser les phrases dynamiques'
+          case 'Validation error: ':
+            return 'Erreur de validation: ';
           default:
             return 'Erreur';
         }
