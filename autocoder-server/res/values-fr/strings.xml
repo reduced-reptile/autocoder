@@ -20,6 +20,7 @@
         <item>Installable en tant qu'application</item>
         <item>Fonctionne hors ligne</item>
     </string-array>
+    <string name="vue_under_construction">La version vue de cette application est actuellement en construction, veuillez utiliser la version de base à la place.</string>
     <string name="vue_href">/vue?lang=fr</string>
     <string name="vue_link">Voir la version vue du site!</string>
     <string name="basic_title">Application de base</string>
@@ -27,6 +28,7 @@
         <item>Si vous avez du mal à utiliser la version vue de la page, ou si vous ne souhaitez pas utiliser css ou javascript, nous avons une version de base de l'application.</item>
         <item>Il possède toutes les fonctionnalités de l'application vue sans les cloches et les sifflets de l'ère moderne.</item>
     </string-array>
+    <string name="basic_under_construction">La version de base de cette application est actuellement en construction, veuillez utiliser la version vue à la place.</string>
     <string name="basic_href">/basic/1?lang=fr</string>
     <string name="basic_link">Voir la version de base du site!</string>
 

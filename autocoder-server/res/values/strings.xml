@@ -20,6 +20,7 @@
         <item>Installable as an application</item>
         <item>Works offline</item>
     </string-array>
+    <string name="vue_under_construction">The vue version of this application is currently under contruction, please use the basic version instead.</string>
     <string name="vue_href">/vue</string>
     <string name="vue_link">View the vue version of the site!</string>
     <string name="basic_title">Basic Application</string>
@@ -27,6 +28,7 @@
         <item>If you have trouble using the vue version of the page, or don't want to use css or javascript, we have a basic version of the application.</item>
         <item>It has all the features of the vue application without any of the bells and whistles of the modern era.</item>
     </string-array>
+    <string name="basic_under_construction">The basic version of this application is currently under contruction, please use the vue version instead.</string>
     <string name="basic_href">/basic/1</string>
     <string name="basic_link">View the basic version of the site!</string>
 

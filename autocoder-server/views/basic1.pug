@@ -5,6 +5,7 @@ block content
     h1= title
   main
     form(id='basicForm', action= basicFormHref, method='post')
+      input(id='lang', name='lang', type='hidden', value= language)
       label(for='problemTitle')
         p= problemTitle
       input(id='problemTitle', name='problemTitle', type='text', size='50')
