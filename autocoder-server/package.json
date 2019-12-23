@@ -5,9 +5,14 @@
   "description": "The back end of the autocoder application",
   "author": "Raymond Mendelovits",
   "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reduced-reptile/autocoder.git"
+  },
   "scripts": {
     "dev": "nodemon --exec npm start",
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "cypress:open": "cypress open"
   },
   "dependencies": {
     "autocoder-package": "file:../autocoder-package",
@@ -31,5 +36,8 @@
       "docs/*"
     ],
     "delay": "2500"
+  },
+  "devDependencies": {
+    "cypress": "^3.8.0"
   }
 }
