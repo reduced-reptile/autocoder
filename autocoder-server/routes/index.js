@@ -20,7 +20,8 @@ router.get('/', function(req, res, next) {
       const stringResources = result['resources']['string'];
       const arrayResources = result['resources']['string-array'];
       res.render('index', {
-        title: utils.getProperty('title', stringResources, lang, req, res),
+        pageTitle: utils.getProperty('home_page_title', stringResources, lang, req, res),
+        applicationTitle: utils.getProperty('application_title', stringResources, lang, req, res),
         language: utils.getProperty('language_code', stringResources, lang, req, res),
         welcomeMessage:utils.getProperty('welcome_message', stringResources, lang, req, res),
         languageLink: utils.getProperty('language_link', stringResources, lang, req, res),

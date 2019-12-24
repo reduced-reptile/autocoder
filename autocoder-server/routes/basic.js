@@ -25,7 +25,8 @@ router.get('/1', function(req, res, next) {
       const contestLanguageLabels = utils.getProperty('contest_language_label_array', arrayResources, lang, req, res);
       const additionalLanguageLabels = utils.getProperty('additional_language_label_array', arrayResources, lang, req, res);
       res.render('basic1', {
-        title: utils.getProperty('title', stringResources, lang, req, res),
+        pageTitle: utils.getProperty('basic_1_page_title', stringResources, lang, req, res),
+        applicationTitle: utils.getProperty('application_title', stringResources, lang, req, res),
         language: utils.getProperty('language_code', stringResources, lang, req, res),
         basicFormHref: utils.getProperty('basic_form_href', stringResources, lang, req, res),
         problemTitle: utils.getProperty('problem_title', stringResources, lang, req, res),
@@ -88,9 +89,9 @@ router.post('/2', [
           programmingLanguage: req.body.programmingLanguage }
       );
       const stringResources = result['resources']['string'];
-      const arrayResources = result['resources']['string-array'];
       res.render('basic2', {
-        title: utils.getProperty('title', stringResources, lang, req, res),
+        pageTitle: utils.getProperty('basic_2_page_title', stringResources, lang, req, res),
+        applicationTitle: utils.getProperty('application_title', stringResources, lang, req, res),
         language: utils.getProperty('language_code', stringResources, lang, req, res),
         viewResultsLabel: utils.getProperty('view_results_label', stringResources, lang, req, res),
         codeOutputLabel: utils.getProperty('code_output_label', stringResources, lang, req, res),

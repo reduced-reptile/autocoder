@@ -1,5 +1,16 @@
-describe('My First Test', function() {
-  it('Does not do much!', function() {
-    expect(true).to.equal(true)
+describe('Home Page Verifier', function() {
+  it('clicks the link "Navigate to basic"', function() {
+    cy.visit('http://localhost:3000')
+    cy.title().should('eq', 'Home Page - Autocoder')
+    cy.get('a[href*="basic"]').click()
+    cy.title().should('eq', 'Problem Details - Autocoder')
+  })
+  it('switches between english and french', function() {
+    cy.visit('http://localhost:3000')
+    cy.title().should('eq', 'Home Page - Autocoder')
+    cy.get('a[href*="fr"]').click()
+    cy.title().should('eq', 'Page d\'accueil - Autocodeur')
+    cy.get('a[href*="en"]').click()
+    cy.title().should('eq', 'Home Page - Autocoder')
   })
 })

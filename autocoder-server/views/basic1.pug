@@ -2,7 +2,7 @@ extends layout
 
 block content
   header
-    h1= title
+    h1= applicationTitle
   main
     form(id='basicForm', action= basicFormHref, method='post')
       input(id='lang', name='lang', type='hidden', value= language)
