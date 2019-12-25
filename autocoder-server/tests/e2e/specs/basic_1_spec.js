@@ -1,6 +1,6 @@
 describe('Basics Page 1 Verifier', function() {
   it('fills in the problem details and submit the form', function() {
-    cy.visit('http://localhost:3000/basic/1')
+    cy.visit('/basic/1')
     cy.title().should('eq', 'Problem Details - Autocoder')
     cy.get('form').within(() => {
       cy.get('#problemTitle').type('problem title')

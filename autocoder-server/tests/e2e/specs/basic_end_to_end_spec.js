@@ -1,6 +1,6 @@
 describe('End to End Verifier', function() {
   it('goes through the basic flow in english', function() {
-    cy.visit('http://localhost:3000')
+    cy.visit('/')
     cy.title().should('eq', 'Home Page - Autocoder')
     cy.get('a[href*="basic"]').click()
     cy.title().should('eq', 'Problem Details - Autocoder')
@@ -14,8 +14,9 @@ describe('End to End Verifier', function() {
     cy.get('form').submit()
     cy.title().should('eq', 'Resulting Code - Autocoder')
   })
+
   it('goes through the basic flow in french', function() {
-    cy.visit('http://localhost:3000?lang=fr')
+    cy.visit('/?lang=fr')
     cy.title().should('eq', 'Page d\'accueil - Autocodeur')
     cy.get('a[href*="basic"]').click()
     cy.title().should('eq', 'Détails du problème - Autocodeur')
