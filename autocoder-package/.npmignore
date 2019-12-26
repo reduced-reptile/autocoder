@@ -1,0 +1,7 @@
+#ignore dev properties of the package
+src
+tests
+.prettierrc
+jest.config.js
+tsconfig.json
+tslint.json

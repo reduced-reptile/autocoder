@@ -1,0 +1,10 @@
+  def inputSection
+    int1 = readline(prompt = "speed limit: ").to_i
+    int2 = readline(prompt = "recorded speed of the car: ").to_i
+    JSON.build do |json|
+      json.object do
+        json.field "int1", int1
+        json.field "int2", int2
+      end
+    end
+  end

@@ -1,0 +1,10 @@
+  def outputSection( outputVars: JSON)
+    input = JSON.parse(data)
+    speeding = input["speeding"]
+    fine = input["fine"]
+    if speeding
+      puts "You are speeding and your fine is $" + fine
+    else
+      puts "Congratulations, you are within the speed limit!"
+    end
+  end

@@ -1,0 +1,4 @@
+require "json"
+
+# Runner class for the crystal autocoder.
+class Main

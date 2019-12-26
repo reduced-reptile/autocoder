@@ -1,0 +1,19 @@
+  def logicSection(data: JSON)
+    input = JSON.parse(data)
+    int1 = input["int1"]
+    int2 = input["int2"]
+    fine = 0
+    overLimit = int2 - int1
+    if overLimit >= 1 && overLimit <= 20
+      fine = 100
+    elsif overLimit >= 21 && overLimit <= 30
+      fine = 270
+    elsif overLimit >= 31
+      fine = 500
+    end
+    JSON.build do |json|
+      json.object do
+        json.field "Fine", fine
+      end
+    end
+  end

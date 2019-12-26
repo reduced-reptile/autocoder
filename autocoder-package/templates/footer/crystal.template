@@ -1,0 +1,8 @@
+  def main
+    data = inputSection
+    outputVars = logicSection(data)
+    outputSection(outputVars)
+  end
+
+  main
+end

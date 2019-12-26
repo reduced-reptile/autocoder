@@ -1,22 +1,20 @@
-interface IProblem {
-  problemTitle: string;
-  problemDescription: string;
-  inputSpeciﬁcation: string;
-  outputSpeciﬁcation: string;
-  programmingLanguage: string;
-}
+import { InputSection } from './classes/InputSection';
+import { LogicSection } from './classes/LogicSection';
+import { OutputSection } from './classes/OutputSection';
+import { StatusCodes } from './enums/StatusCodes';
+import { IProblem } from './interfaces/IProblem';
 
 function autocoder(step: string, lang: string, data: IProblem) {
   switch (step) {
     case 'code':
       return {
         code: 'puts "Hello world!"',
-        status: 200,
+        status: StatusCodes.OK,
       };
     default:
       return {
         message: 'Invalid step ' + step,
-        status: 400,
+        status: StatusCodes.BadRequest,
       };
   }
 }
