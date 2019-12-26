@@ -1,16 +1,16 @@
+"use strict";
 function autocoder(step, lang, data) {
     switch (step) {
         case 'code':
             return {
-                status: 200,
-                code: 'puts "Hello world!"'
+                code: 'puts "Hello world!"',
+                status: 200
             };
         default:
             return {
-                status: 400,
-                message: 'Invalid step ' + step
+                message: 'Invalid step ' + step,
+                status: 400
             };
     }
 }
-;
 module.exports = autocoder;

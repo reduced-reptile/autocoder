@@ -1,4 +1,4 @@
-interface Problem {
+interface IProblem {
   problemTitle: string;
   problemDescription: string;
   inputSpeciﬁcation: string;
@@ -6,19 +6,19 @@ interface Problem {
   programmingLanguage: string;
 }
 
-function autocoder(step: string, lang: string, data: Problem) {
+function autocoder(step: string, lang: string, data: IProblem) {
   switch (step) {
     case 'code':
       return {
+        code: 'puts "Hello world!"',
         status: 200,
-        code: 'puts "Hello world!"'
       };
     default:
       return {
-        status: 400,
         message: 'Invalid step ' + step,
+        status: 400,
       };
   }
-};
+}
 
 module.exports = autocoder;
