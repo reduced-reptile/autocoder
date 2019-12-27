@@ -1,9 +1,9 @@
-  def outputSection( outputVars: JSON)
-    input = JSON.parse(data)
-    speeding = input["speeding"]
-    fine = input["fine"]
+  def outputSection( outputVars : String) : Nil
+    input = JSON.parse(outputVars)
+    speeding = input["speeding"].as_bool
+    fine = input["fine"].to_s.to_i
     if speeding
-      puts "You are speeding and your fine is $" + fine
+      puts "You are speeding and your fine is $" + fine.to_s
     else
       puts "Congratulations, you are within the speed limit!"
     end

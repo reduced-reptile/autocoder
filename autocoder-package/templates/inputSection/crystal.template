@@ -1,6 +1,8 @@
-  def inputSection
-    int1 = readline(prompt = "speed limit: ").to_i
-    int2 = readline(prompt = "recorded speed of the car: ").to_i
+  def inputSection : String 
+    print("speed limit: ")
+    int1 = gets.not_nil!.to_i
+    print("recorded speed of the car: ")
+    int2 = gets.not_nil!.to_i
     JSON.build do |json|
       json.object do
         json.field "int1", int1
