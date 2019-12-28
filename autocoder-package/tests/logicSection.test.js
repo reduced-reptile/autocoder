@@ -7,7 +7,12 @@ try {
   const fileContents = fs.readFileSync('tests/logicSection.test.yaml', 'utf8');
   const problems = yaml.safeLoadAll(fileContents);
   problems.forEach((problem) => {
-    const logicSection = new LogicSection(problem.lang, problem.problemDescription, problem.programmingLanguage);
+    const logicSection = new LogicSection(
+      problem.lang,
+      problem.problemDescription,
+      problem.programmingLanguage,
+      problem.inputVars,
+      problem.outputVars);
     test(`creates the correct code for ${problem.problemTitle}`, () => {
         expect(logicSection.getCode()).toEqual(codeOutput[problem.problemTitle].join('\n'));
     });

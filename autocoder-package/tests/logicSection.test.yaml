@@ -12,6 +12,14 @@
     | 21 to 30            | $270 |
     | 31 or above         | $500 |
   programmingLanguage: 'crystal'
+  inputVars: [
+    'speed',
+    'speedLimit'
+  ]
+  outputVars: [
+    'F',
+    'speeding'
+  ]
 --- # 2012 Canadian Computing Competition: Junior Division J2
   lang: 'en'
   problemTitle: 'Problem J2: Sounds fishy!'
@@ -26,6 +34,12 @@
     All other readings will be considered random noise or debris, which we will call "No Fish."
     Your task is to read a sequence of depth readings and determine if the alarm will sound.
   programmingLanguage: 'crystal'
+  inputVars: [
+    'depth readings'
+  ]
+  outputVars: [
+    'depth reading state'
+  ]
 --- # 2012 Canadian Computing Competition: Junior Division J3
   lang: 'en'
   problemTitle: 'Problem J3: Icon Scaling'
@@ -41,3 +55,9 @@
     Write a program that accepts a positive integer scaling factor and outputs the scaled icon. A scaling
     factor of k means that each character is replaced by a k × k grid consisting only of that character.
   programmingLanguage: 'crystal'
+  inputVars: [
+    'k'
+  ]
+  outputVars: [
+    '3k lines'
+  ]
