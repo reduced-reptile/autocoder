@@ -3,6 +3,8 @@
         "module": "commonjs",
         "skipLibCheck": true,
         "declaration": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
         "outDir": "./built",
         "strict": true
     },

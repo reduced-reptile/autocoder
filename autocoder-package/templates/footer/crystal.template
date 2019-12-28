@@ -1,6 +1,0 @@
-end
-
-mainProgram = Main.new
-data = mainProgram.inputSection
-outputVars = mainProgram.logicSection(data)
-mainProgram.outputSection(outputVars)

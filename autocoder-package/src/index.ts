@@ -15,19 +15,15 @@
 // You should have received a copy of the GNU General Public License
 // along with Autocoder.  If not, see <http://www.gnu.org/licenses/>.
 
-import { InputSection } from './classes/InputSection';
-import { LogicSection } from './classes/LogicSection';
-import { OutputSection } from './classes/OutputSection';
+import { CodeBuilder } from './classes/CodeBuilder';
 import { StatusCodes } from './enums/StatusCodes';
 import { IProblem } from './interfaces/IProblem';
 
 function autocoder(step: string, lang: string, data: IProblem) {
   switch (step) {
     case 'code':
-      return {
-        code: 'puts "Hello world!"',
-        status: StatusCodes.OK,
-      };
+      const codeBuilder = new CodeBuilder(lang, data);
+      return codeBuilder.buildCode();
     default:
       return {
         message: 'Invalid step ' + step,
