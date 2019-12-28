@@ -1,0 +1,28 @@
+--- # 2012 Canadian Computing Competition: Junior Division J1
+  lang: 'en'
+  problemTitle: 'Problem J1: Speed fines are not fine!'
+  outputSpeciﬁcation: |
+    If the driver is not speeding, the output should be:
+      *Congratulations, you are within the speed limit!*
+    If the driver is speeding, the output should be:
+      *You are speeding and your fine is $F.*
+    where F is the amount of the fine as described in the table above
+  programmingLanguage: 'crystal'
+--- # 2012 Canadian Computing Competition: Junior Division J2
+  lang: 'en'
+  problemTitle: 'Problem J2: Sounds fishy!'
+  outputSpeciﬁcation: |
+    The output is one of four possibilities.
+    If the depth readings are increasing, then the output should be *Fish Rising*.
+    If the depth readings are decreasing, then the output should be *Fish Diving*.
+    If the depth readings are identical, then the output should be *Fish At Constant Depth*.
+    Otherwise, the output should be *No Fish*.
+  programmingLanguage: 'crystal'
+--- # 2012 Canadian Computing Competition: Junior Division J3
+  lang: 'en'
+  problemTitle: 'Problem J3: Icon Scaling'
+  outputSpeciﬁcation: |
+    The output will be 3k lines, which represent each individual line scaled by a factor of k and
+    repeated k times. A line is scaled by a factor of k by replacing each character in the line with k
+    copies of the character.
+  programmingLanguage: 'crystal'

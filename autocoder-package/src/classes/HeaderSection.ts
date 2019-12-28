@@ -1,14 +1,14 @@
 import { Section } from './Section';
 
 export class HeaderSection extends Section {
-    problemTitle: string;
+  private problemTitle: string;
 
-    constructor(lang: string, problemTitle: string, programmingLanguage: string) {
-        super(lang, programmingLanguage);
-        this.problemTitle = problemTitle;
-    }
+  constructor(lang: string, problemTitle: string, programmingLanguage: string) {
+    super(lang, programmingLanguage);
+    this.problemTitle = problemTitle;
+  }
 
-    getCode() {
-        return this.getTemplate('HeaderSection');
-    }
+  public getCode() {
+    return this.getTemplate('HeaderSection');
+  }
 }

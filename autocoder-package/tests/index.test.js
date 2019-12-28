@@ -1,9 +1,10 @@
 const autocoder = require('../built');
 const fs = require('fs');
 const yaml = require('js-yaml');
+const codeOutput = require('./index.test.json');
 
 try {
-  const fileContents = fs.readFileSync('tests/problems.yaml', 'utf8');
+  const fileContents = fs.readFileSync('tests/input.test.yaml', 'utf8');
   const problems = yaml.safeLoadAll(fileContents);
   problems.forEach((problem) => {
     test(`creates the correct code for ${problem.problemTitle}`, () => {
@@ -15,7 +16,7 @@ try {
             programmingLanguage: problem.programmingLanguage
         })).toEqual({
             status: 200,
-            code: problem.codeOutput
+            code: codeOutput[problem.problemTitle].join('\n')
         });
     });
   });

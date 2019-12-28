@@ -1,0 +1,21 @@
+--- # 2012 Canadian Computing Competition: Junior Division J1
+  lang: 'en'
+  problemTitle: 'Problem J1: Speed fines are not fine!'
+  inputSpeciﬁcation: |
+    The user will be prompted to enter two integers.
+    First, the user will be prompted to enter the speed limit.
+    Second, the user will be prompted to enter the recorded speed of the car.
+  programmingLanguage: 'crystal'
+--- # 2012 Canadian Computing Competition: Junior Division J2
+  lang: 'en'
+  problemTitle: 'Problem J2: Sounds fishy!'
+  inputSpeciﬁcation: |
+    The input will be four positive integers, representing the depth readings.
+    Each integer will be on its own line of input.
+  programmingLanguage: 'crystal'
+--- # 2012 Canadian Computing Competition: Junior Division J3
+  lang: 'en'
+  problemTitle: 'Problem J3: Icon Scaling'
+  inputSpeciﬁcation: |
+    The input will be a positive integer k such that k < 25.
+  programmingLanguage: 'crystal'

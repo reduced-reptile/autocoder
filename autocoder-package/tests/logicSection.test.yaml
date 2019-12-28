@@ -1,5 +1,4 @@
 --- # 2012 Canadian Computing Competition: Junior Division J1
-  step: 'code'
   lang: 'en'
   problemTitle: 'Problem J1: Speed fines are not fine!'
   problemDescription: |
@@ -12,21 +11,8 @@
     | 1 to 20             | $100 |
     | 21 to 30            | $270 |
     | 31 or above         | $500 |
-  inputSpeciﬁcation: |
-    The user will be prompted to enter two integers.
-    First, the user will be prompted to enter the speed limit.
-    Second, the user will be prompted to enter the recorded speed of the car.
-  outputSpeciﬁcation: |
-    If the driver is not speeding, the output should be:
-      *Congratulations, you are within the speed limit!*
-    If the driver is speeding, the output should be:
-      *You are speeding and your fine is $F.*
-    where F is the amount of the fine as described in the table above
   programmingLanguage: 'crystal'
-  codeOutput: >-
-    puts "Hello world!"
 --- # 2012 Canadian Computing Competition: Junior Division J2
-  step: 'code'
   lang: 'en'
   problemTitle: 'Problem J2: Sounds fishy!'
   problemDescription: |
@@ -39,20 +25,8 @@
     * there are four consecutive depth readings which are identical (which we will call "Constant Depth").
     All other readings will be considered random noise or debris, which we will call "No Fish."
     Your task is to read a sequence of depth readings and determine if the alarm will sound.
-  inputSpeciﬁcation: |
-    The input will be four positive integers, representing the depth readings.
-    Each integer will be on its own line of input.
-  outputSpeciﬁcation: |
-    The output is one of four possibilities.
-    If the depth readings are increasing, then the output should be *Fish Rising*.
-    If the depth readings are decreasing, then the output should be *Fish Diving*.
-    If the depth readings are identical, then the output should be *Fish At Constant Depth*.
-    Otherwise, the output should be *No Fish*.
   programmingLanguage: 'crystal'
-  codeOutput: >-
-    puts "Hello world!"
 --- # 2012 Canadian Computing Competition: Junior Division J3
-  step: 'code'
   lang: 'en'
   problemTitle: 'Problem J3: Icon Scaling'
   problemDescription: |
@@ -66,12 +40,4 @@
     ```
     Write a program that accepts a positive integer scaling factor and outputs the scaled icon. A scaling
     factor of k means that each character is replaced by a k × k grid consisting only of that character.
-  inputSpeciﬁcation: |
-    The input will be a positive integer k such that k < 25.
-  outputSpeciﬁcation: |
-    The output will be 3k lines, which represent each individual line scaled by a factor of k and
-    repeated k times. A line is scaled by a factor of k by replacing each character in the line with k
-    copies of the character.
   programmingLanguage: 'crystal'
-  codeOutput: >-
-    puts "Hello world!"
