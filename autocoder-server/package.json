@@ -38,6 +38,6 @@
     "delay": "2500"
   },
   "devDependencies": {
-    "cypress": "^3.8.0"
+    "cypress": "^3.8.1"
   }
 }
