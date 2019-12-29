@@ -1,12 +1,9 @@
 {
     "Problem J1: Speed fines are not fine!": [
-        "  def logicSection(data : String) : String",
-        "    input = JSON.parse(data)",
-        "    int1 = input[\"int1\"].to_s.to_i",
-        "    int2 = input[\"int2\"].to_s.to_i",
+        "    # Logic Section",
         "    speeding = true",
         "    fine = 500",
-        "    overLimit = int2 - int1",
+        "    overLimit = recordedSpeed - speedLimit",
         "    if overLimit >= 1 && overLimit <= 20",
         "      fine = 100",
         "    elsif overLimit >= 21 && overLimit <= 30",
@@ -14,23 +11,13 @@
         "    elsif overLimit <= 0",
         "      fine = 0",
         "      speeding = false",
-        "    end",
-        "    JSON.build do |json|",
-        "      json.object do",
-        "        json.field \"fine\", fine",
-        "        json.field \"speeding\", speeding",
-        "      end",
-        "    end",
-        "  end"
+        "    end"
     ],
     "Problem J2: Sounds fishy!": [
-        "  def logicSection(data : String) : String",
-        "    input = JSON.parse(data)",
-        "    int1 = input[\"int1\"].to_s.to_i",
-        "    int2 = input[\"int2\"].to_s.to_i",
+        "    # Logic Section",
         "    speeding = true",
         "    fine = 500",
-        "    overLimit = int2 - int1",
+        "    overLimit = recordedSpeed - speedLimit",
         "    if overLimit >= 1 && overLimit <= 20",
         "      fine = 100",
         "    elsif overLimit >= 21 && overLimit <= 30",
@@ -38,23 +25,13 @@
         "    elsif overLimit <= 0",
         "      fine = 0",
         "      speeding = false",
-        "    end",
-        "    JSON.build do |json|",
-        "      json.object do",
-        "        json.field \"fine\", fine",
-        "        json.field \"speeding\", speeding",
-        "      end",
-        "    end",
-        "  end"
+        "    end"
     ],
     "Problem J3: Icon Scaling": [
-        "  def logicSection(data : String) : String",
-        "    input = JSON.parse(data)",
-        "    int1 = input[\"int1\"].to_s.to_i",
-        "    int2 = input[\"int2\"].to_s.to_i",
+        "    # Logic Section",
         "    speeding = true",
         "    fine = 500",
-        "    overLimit = int2 - int1",
+        "    overLimit = recordedSpeed - speedLimit",
         "    if overLimit >= 1 && overLimit <= 20",
         "      fine = 100",
         "    elsif overLimit >= 21 && overLimit <= 30",
@@ -62,13 +39,6 @@
         "    elsif overLimit <= 0",
         "      fine = 0",
         "      speeding = false",
-        "    end",
-        "    JSON.build do |json|",
-        "      json.object do",
-        "        json.field \"fine\", fine",
-        "        json.field \"speeding\", speeding",
-        "      end",
-        "    end",
-        "  end"
+        "    end"
     ]
 }

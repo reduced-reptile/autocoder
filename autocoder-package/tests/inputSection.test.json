@@ -1,44 +1,23 @@
 {
     "Problem J1: Speed fines are not fine!": [
-        "  def inputSection : String",
+        "    # Input Section",
         "    print(\"speed limit: \")",
-        "    int1 = gets.not_nil!.to_i",
+        "    speedLimit = gets.not_nil!.to_i",
         "    print(\"recorded speed of the car: \")",
-        "    int2 = gets.not_nil!.to_i",
-        "    JSON.build do |json|",
-        "      json.object do",
-        "        json.field \"int1\", int1",
-        "        json.field \"int2\", int2",
-        "      end",
-        "    end",
-        "  end"
+        "    recordedSpeed = gets.not_nil!.to_i"
     ],
     "Problem J2: Sounds fishy!": [
-        "  def inputSection : String",
+        "    # Input Section",
         "    print(\"speed limit: \")",
-        "    int1 = gets.not_nil!.to_i",
+        "    speedLimit = gets.not_nil!.to_i",
         "    print(\"recorded speed of the car: \")",
-        "    int2 = gets.not_nil!.to_i",
-        "    JSON.build do |json|",
-        "      json.object do",
-        "        json.field \"int1\", int1",
-        "        json.field \"int2\", int2",
-        "      end",
-        "    end",
-        "  end"
+        "    recordedSpeed = gets.not_nil!.to_i"
     ],
     "Problem J3: Icon Scaling": [
-        "  def inputSection : String",
+        "    # Input Section",
         "    print(\"speed limit: \")",
-        "    int1 = gets.not_nil!.to_i",
+        "    speedLimit = gets.not_nil!.to_i",
         "    print(\"recorded speed of the car: \")",
-        "    int2 = gets.not_nil!.to_i",
-        "    JSON.build do |json|",
-        "      json.object do",
-        "        json.field \"int1\", int1",
-        "        json.field \"int2\", int2",
-        "      end",
-        "    end",
-        "  end"
+        "    recordedSpeed = gets.not_nil!.to_i"
     ]
 }

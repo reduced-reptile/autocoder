@@ -33,13 +33,13 @@ export class CodeBuilder {
       const logicSection = new LogicSection(this.lang, this.problemDescription, this.programmingLanguage, inputSection.getOutputVars(), outputSection.getInputVars());
       const footerSection = new FooterSection(this.lang, this.programmingLanguage);
       let program = headerSection.getCode();
-      program += '\n\n'; // Should have a space between the class and the first method
+      program += '\n'; // Need a newline between each section
       program += inputSection.getCode();
-      program += '\n\n'; // Should have a space between methods
+      program += '\n'; // Need a newline between each section
       program += logicSection.getCode();
-      program += '\n\n'; // Should have a space between methods
+      program += '\n'; // Need a newline between each section
       program += outputSection.getCode();
-      program += '\n'; // Just a newline between the end of output and the footer
+      program += '\n'; // Need a newline between each section
       program += footerSection.getCode();
       return {
         code: program,
