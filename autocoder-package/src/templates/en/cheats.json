@@ -1,0 +1,11 @@
+{
+    "the user will be prompted to enter two integers.": "2 integers",
+    "first, the user will be prompted to enter the speed limit.": "first prompt 'Enter the speed limit:'",
+    "second, the user will be prompted to enter the recorded speed of the car.": "second prompt 'Enter the recorded speed of the car:'",
+    "the input will be four positive integers, representing the depth readings.": "4 integers",
+    "each integer will be on its own line of input.": "each integer own line",
+    "the input will be a positive integer k such that k < 25.": "integer k",
+    "2 integers & first prompt 'Enter the speed limit:' & second prompt 'Enter the recorded speed of the car:'": "integer speedLimit & integer recordedSpeed",
+    "4 integers & each integer own line": "4 integers a",
+    "integer k": "integer k"
+}

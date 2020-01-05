@@ -2,7 +2,7 @@
   "name": "autocoder-frontend",
   "version": "1.0.0",
   "private": false,
-  "license": "GPL-3.0-or-later",
+  "license": "LGPL-3.0-or-later",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -34,7 +34,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-vue": "^6.1.1",
+    "eslint-plugin-vue": "^6.1.2",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {

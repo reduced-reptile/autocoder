@@ -2,7 +2,7 @@ import { Section } from './Section';
 
 export class OutputSection extends Section {
   private outputSpeciﬁcation: string;
-  private inputVars : string[];
+  private inputVars: string[];
 
   constructor(lang: string, outputSpeciﬁcation: string, programmingLanguage: string) {
     super(lang, programmingLanguage);
@@ -10,11 +10,11 @@ export class OutputSection extends Section {
     this.inputVars = this.extractInputVars(outputSpeciﬁcation);
   }
 
-  public getCode() : string {
+  public getCode(): string {
     return this.getTemplate('OutputSection');
   }
-  
-  public getInputVars() : string[] {
+
+  public getInputVars(): string[] {
     return this.inputVars;
   }
 

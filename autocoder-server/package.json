@@ -4,7 +4,7 @@
   "private": false,
   "description": "The back end of the autocoder application",
   "author": "Raymond Mendelovits",
-  "license": "GPL-3.0-or-later",
+  "license": "LGPL-3.0-or-later",
   "repository": {
     "type": "git",
     "url": "https://github.com/reduced-reptile/autocoder.git"
@@ -21,7 +21,7 @@
     "debug": "~4.1.1",
     "express": "~4.17.1",
     "express-rate-limit": "^5.0.0",
-    "express-validator": "^6.3.0",
+    "express-validator": "^6.3.1",
     "helmet": "^3.21.2",
     "http-errors": "~1.7.3",
     "morgan": "~1.9.1",

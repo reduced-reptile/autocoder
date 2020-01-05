@@ -7,7 +7,7 @@ try {
   const fileContents = fs.readFileSync('tests/index.test.yaml', 'utf8');
   const problems = yaml.safeLoadAll(fileContents);
   problems.forEach((problem) => {
-    test(`creates the correct code for ${problem.problemTitle}`, () => {
+    test(`autocodes correctly for ${problem.problemTitle}`, () => {
         expect(autocoder(problem.step, problem.lang, {
             problemTitle: problem.problemTitle,
             problemDescription: problem.problemDescription,

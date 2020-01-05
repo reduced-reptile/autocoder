@@ -6,6 +6,10 @@
     First, the user will be prompted to enter the speed limit.
     Second, the user will be prompted to enter the recorded speed of the car.
   programmingLanguage: 'crystal'
+  outputVars: [
+    "integer speedLimit",
+    "integer recordedSpeed"
+  ]
 --- # 2012 Canadian Computing Competition: Junior Division J2
   lang: 'en'
   problemTitle: 'Problem J2: Sounds fishy!'
@@ -13,9 +17,11 @@
     The input will be four positive integers, representing the depth readings.
     Each integer will be on its own line of input.
   programmingLanguage: 'crystal'
+  outputVars: ["4 integers a"]
 --- # 2012 Canadian Computing Competition: Junior Division J3
   lang: 'en'
   problemTitle: 'Problem J3: Icon Scaling'
   inputSpeciﬁcation: |
     The input will be a positive integer k such that k < 25.
   programmingLanguage: 'crystal'
+  outputVars: ["integer k"]

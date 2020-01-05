@@ -11,6 +11,10 @@ try {
     test(`creates the correct code for ${problem.problemTitle}`, () => {
         expect(inputSection.getCode()).toEqual(codeOutput[problem.problemTitle].join('\n'));
     });
+
+    test(`creates the correct output variables for ${problem.problemTitle}`, () => {
+      expect(inputSection.getOutputVars()).toEqual(problem.outputVars);
+    });
   });
 } catch (e) {
   test('Fail if an exception occurs', () => {

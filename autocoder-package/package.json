@@ -2,8 +2,13 @@
   "name": "autocoder-package",
   "version": "1.0.0",
   "description": "An automated coder for solving contest challenges",
-  "keywords": ["Contest", "Automated"],
-  "files": ["built/**/*"],
+  "keywords": [
+    "Contest",
+    "Automated"
+  ],
+  "files": [
+    "built/**/*"
+  ],
   "main": "built/index.js",
   "types": "built/index.d.ts",
   "bugs": "https://github.com/reduced-reptile/autocoder/issues",
@@ -17,11 +22,11 @@
     "watch": "tsc -w",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "engines": {
     "node": ">= 12.13.1",
@@ -31,10 +36,10 @@
     "last 1 node version"
   ],
   "author": "Raymond Mendelovits",
-  "license": "GPL-3.0-or-later",
+  "license": "LGPL-3.0-or-later",
   "devDependencies": {
     "@types/jest": "^24.0.25",
-    "@types/node": "^13.1.1",
+    "@types/node": "^13.1.4",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",

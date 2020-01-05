@@ -5,14 +5,20 @@ export class LogicSection extends Section {
   private inputVars: string[];
   private outputVars: string[];
 
-  constructor(lang: string, problemDescription: string, programmingLanguage: string, inputVars: string[], outputVars: string[]) {
+  constructor(
+    lang: string,
+    problemDescription: string,
+    programmingLanguage: string,
+    inputVars: string[],
+    outputVars: string[],
+  ) {
     super(lang, programmingLanguage);
     this.problemDescription = problemDescription;
     this.inputVars = inputVars;
     this.outputVars = outputVars;
   }
 
-  public getCode() : string {
+  public getCode(): string {
     return this.getTemplate('LogicSection');
   }
 }
