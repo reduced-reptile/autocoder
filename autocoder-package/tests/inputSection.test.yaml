@@ -17,7 +17,7 @@
     The input will be four positive integers, representing the depth readings.
     Each integer will be on its own line of input.
   programmingLanguage: 'crystal'
-  outputVars: ["4 integers a"]
+  outputVars: ["4 integers arr1"]
 --- # 2012 Canadian Computing Competition: Junior Division J3
   lang: 'en'
   problemTitle: 'Problem J3: Icon Scaling'

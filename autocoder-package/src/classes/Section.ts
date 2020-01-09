@@ -18,7 +18,8 @@ export class Section {
 
   protected getKeywords(text: string): string[] {
     const textLines = text.toLowerCase().split('\n');
-    const textMeanings = textLines.map(line => this.getMeaning(line));
+    const textMeanings = textLines.map(line => this.getMeaning(line.trim()));
+    console.log(textMeanings);
     return this.combineMeanings(textMeanings);
   }
 

@@ -8,7 +8,10 @@
       *You are speeding and your fine is $F.*
     where F is the amount of the fine as described in the table above
   programmingLanguage: 'crystal'
-  inputVars: []
+  inputVars: [
+    "boolean speeding",
+    "number f"
+  ]
 --- # 2012 Canadian Computing Competition: Junior Division J2
   lang: 'en'
   problemTitle: 'Problem J2: Sounds fishy!'
@@ -19,13 +22,12 @@
     If the depth readings are identical, then the output should be *Fish At Constant Depth*.
     Otherwise, the output should be *No Fish*.
   programmingLanguage: 'crystal'
-  inputVars: []
+  inputVars: ["string depthReadings"]
 --- # 2012 Canadian Computing Competition: Junior Division J3
   lang: 'en'
   problemTitle: 'Problem J3: Icon Scaling'
   outputSpeciﬁcation: |
-    The output will be 3k lines, which represent each individual line scaled by a factor of k and
-    repeated k times. A line is scaled by a factor of k by replacing each character in the line with k
-    copies of the character.
+    The output will be 3k lines, which represent each individual line scaled by a factor of k and repeated k times.
+    A line is scaled by a factor of k by replacing each character in the line with k copies of the character.
   programmingLanguage: 'crystal'
-  inputVars: []
+  inputVars: ['array 3klines']

@@ -19,6 +19,6 @@ export class OutputSection extends Section {
   }
 
   private extractInputVars(outputSpeciﬁcation: string): string[] {
-    return [];
+    return this.getKeywords(outputSpeciﬁcation);
   }
 }
